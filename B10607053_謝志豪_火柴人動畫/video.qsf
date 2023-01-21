@@ -1,0 +1,133 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 132 02/25/2009 SJ Web Edition
+# Date created = 23:58:37  June 24, 2021
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		video_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY Cyclone
+set_global_assignment -name DEVICE EP1C6Q240C8
+set_global_assignment -name TOP_LEVEL_ENTITY video
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 9.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "23:58:37  JUNE 24, 2021"
+set_global_assignment -name LAST_QUARTUS_VERSION 9.0
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name VERILOG_FILE video.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
+set_global_assignment -name LL_MEMBER_STATE LOCKED -section_id "Root Region"
+set_global_assignment -name CYCLONE_CONFIGURATION_SCHEME "PASSIVE SERIAL"
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name GENERATE_RBF_FILE ON
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVCMOS"
+set_global_assignment -name MISC_FILE "c:/altera/90/quartus/video/video.dpf"
+set_location_assignment PIN_53 -to LED_COL[7]
+set_location_assignment PIN_54 -to LED_COL[6]
+set_location_assignment PIN_55 -to LED_COL[5]
+set_location_assignment PIN_56 -to LED_COL[4]
+set_location_assignment PIN_57 -to LED_COL[3]
+set_location_assignment PIN_58 -to LED_COL[2]
+set_location_assignment PIN_59 -to LED_COL[1]
+set_location_assignment PIN_60 -to LED_COL[0]
+set_location_assignment PIN_4 -to LED_ROW[7]
+set_location_assignment PIN_5 -to LED_ROW[6]
+set_location_assignment PIN_6 -to LED_ROW[5]
+set_location_assignment PIN_7 -to LED_ROW[4]
+set_location_assignment PIN_8 -to LED_ROW[3]
+set_location_assignment PIN_11 -to LED_ROW[2]
+set_location_assignment PIN_12 -to LED_ROW[1]
+set_location_assignment PIN_41 -to LED_ROW[0]
+set_location_assignment PIN_28 -to clk
+set_location_assignment PIN_213 -to reset_p
+set_location_assignment PIN_13 -to LED2_ROW[7]
+set_location_assignment PIN_14 -to LED2_ROW[6]
+set_location_assignment PIN_15 -to LED2_ROW[5]
+set_location_assignment PIN_16 -to LED2_ROW[4]
+set_location_assignment PIN_17 -to LED2_ROW[3]
+set_location_assignment PIN_18 -to LED2_ROW[2]
+set_location_assignment PIN_19 -to LED2_ROW[1]
+set_location_assignment PIN_20 -to LED2_ROW[0]
+set_location_assignment PIN_61 -to LED1_ROW[7]
+set_location_assignment PIN_62 -to LED1_ROW[6]
+set_location_assignment PIN_63 -to LED1_ROW[5]
+set_location_assignment PIN_64 -to LED1_ROW[4]
+set_location_assignment PIN_65 -to LED1_ROW[3]
+set_location_assignment PIN_66 -to LED1_ROW[2]
+set_location_assignment PIN_67 -to LED1_ROW[1]
+set_location_assignment PIN_68 -to LED1_ROW[0]
+set_location_assignment PIN_181 -to LED_ROW3[7]
+set_location_assignment PIN_182 -to LED_ROW3[6]
+set_location_assignment PIN_183 -to LED_ROW3[5]
+set_location_assignment PIN_184 -to LED_ROW3[4]
+set_location_assignment PIN_185 -to LED_ROW3[3]
+set_location_assignment PIN_222 -to LED_ROW3[2]
+set_location_assignment PIN_223 -to LED_ROW3[1]
+set_location_assignment PIN_224 -to LED_ROW3[0]
+set_location_assignment PIN_225 -to LED_ROW4[7]
+set_location_assignment PIN_132 -to LED_ROW4[6]
+set_location_assignment PIN_133 -to LED_ROW4[5]
+set_location_assignment PIN_134 -to LED_ROW4[4]
+set_location_assignment PIN_135 -to LED_ROW4[3]
+set_location_assignment PIN_136 -to LED_ROW4[2]
+set_location_assignment PIN_137 -to LED_ROW4[1]
+set_location_assignment PIN_138 -to LED_ROW4[0]
+set_location_assignment PIN_139 -to LED_ROW5[7]
+set_location_assignment PIN_140 -to LED_ROW5[6]
+set_location_assignment PIN_141 -to LED_ROW5[5]
+set_location_assignment PIN_143 -to LED_ROW5[4]
+set_location_assignment PIN_144 -to LED_ROW5[3]
+set_location_assignment PIN_156 -to LED_ROW5[2]
+set_location_assignment PIN_158 -to LED_ROW5[1]
+set_location_assignment PIN_159 -to LED_ROW5[0]
+set_location_assignment PIN_160 -to LED_ROW6[7]
+set_location_assignment PIN_161 -to LED_ROW6[6]
+set_location_assignment PIN_162 -to LED_ROW6[5]
+set_location_assignment PIN_163 -to LED_ROW6[4]
+set_location_assignment PIN_164 -to LED_ROW6[3]
+set_location_assignment PIN_165 -to LED_ROW6[2]
+set_location_assignment PIN_166 -to LED_ROW6[1]
+set_location_assignment PIN_167 -to LED_ROW6[0]
+set_location_assignment PIN_168 -to LED_ROW7[7]
+set_location_assignment PIN_169 -to LED_ROW7[6]
+set_location_assignment PIN_170 -to LED_ROW7[5]
+set_location_assignment PIN_173 -to LED_ROW7[4]
+set_location_assignment PIN_174 -to LED_ROW7[3]
+set_location_assignment PIN_175 -to LED_ROW7[2]
+set_location_assignment PIN_176 -to LED_ROW7[1]
+set_location_assignment PIN_177 -to LED_ROW7[0]
